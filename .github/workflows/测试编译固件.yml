@@ -84,7 +84,7 @@ jobs:
               TAGS_NAME="Lienol"
           elif [[ "${{ inputs.source_branch }}" == *"pisen-wfr101n-22.03"* ]]; then
               REPO_URL="https://github.com/YGSRY/openwrt"
-              REPO_BRANCH="22.03"
+              REPO_BRANCH="openwrt-22.03"
               TAGS_NAME="pisen-wfr101n-22.03"
           else
               echo "Unknown source code repository."
