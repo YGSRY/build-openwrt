@@ -21,6 +21,7 @@ on:
           - Lienol-master
           - pisen-wfr101n-22.03
           - pisen-wfr101n-23.05.0
+          - pisen-wfr101n-23.05.0-tor
       
 env:
   FEEDS_CONF: config/${{ inputs.source_branch }}/feeds.conf.default
@@ -91,6 +92,10 @@ jobs:
               REPO_URL="https://github.com/YGSRY/PISEN_WFR101N_23.05.0"
               REPO_BRANCH="main"
               TAGS_NAME="pisen-wfr101n-23.05.0"
+          elif [[ "${{ inputs.source_branch }}" == *"pisen-wfr101n-23.05.0-tor"* ]]; then
+              REPO_URL="https://github.com/YGSRY/PISEN_WFR101N_23.05.0"
+              REPO_BRANCH="main"
+              TAGS_NAME="pisen-wfr101n-23.05.0-tor"
           else
               echo "Unknown source code repository."
               exit 1
