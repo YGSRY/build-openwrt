@@ -3,7 +3,7 @@
 # Description: Build OpenWrt
 #============================================================================================
 
-name: 编译固件22.03.5稳定版
+name: 编译固件PISEN WFR101N稳定版
 
 on:
   repository_dispatch:
@@ -20,7 +20,7 @@ on:
           - immortalwrt-master
           - Lienol-master
           - pisen-wfr101n-22.03
-          - pisen-wfr101n-23.05.0
+          - pisen-wfr101n-23.05.4
           - pisen-wfr101n-23.05.0_tor
       
 env:
@@ -88,8 +88,8 @@ jobs:
               REPO_URL="https://github.com/YGSRY/PISEN_WFR101N_22.03.5"
               REPO_BRANCH="main"
               TAGS_NAME="pisen-wfr101n-22.03"
-          elif [[ "${{ inputs.source_branch }}" == *"pisen-wfr101n-23.05.0"* ]]; then
-              REPO_URL="https://github.com/YGSRY/PISEN_WFR101N_23.05.2"
+          elif [[ "${{ inputs.source_branch }}" == *"pisen-wfr101n-23.05.4"* ]]; then
+              REPO_URL="https://github.com/YGSRY/PISEN_WFR101N_23.05.4"
               REPO_BRANCH="main"
               TAGS_NAME="pisen-wfr101n-23.05.0"
           elif [[ "${{ inputs.source_branch }}" == *"pisen-wfr101n-23.05.0_tor"* ]]; then
